@@ -122,6 +122,7 @@ header form input[type=search]{background:none;border:0 none;color:#999;font-siz
 input[type=search].dim{color:#ccc;}
 input[type=search]:focus{outline:none;}
 header form input[type=submit]{background:url(../images/btn-search.png) no-repeat 50% 50%;border:0 none;width:19px;height:30px;float:right;}
+
 header h1{color:#c3ba83;margin:0;line-height:1;font-weight:normal;float:right;clear:right;font-size:3.6em;}
 header h1 a{color:#c3ba83;}
 header h1 a:hover{color:#9B9368;}
@@ -212,6 +213,7 @@ ul.banner a img{max-width:100%;}
 
 .map{background:#c3ba83;-webkit-border-radius: 15px;-moz-border-radius: 15px;border-radius: 15px;padding:15px;}
 .map a{display:block;}
+.map a:first-of-type{margin-bottom: 15px;}
 .map a img{max-width:100%;}
 .map h1{font-size:2.4em;color:#fff;font-weight:normal;}
 .map form{width:100%;display:block;}
@@ -251,6 +253,7 @@ footer .social li{float:left;padding:0 0 0 10px;}
 footer .social li a{display:block;background-position:0 0;background-repeat:no-repeat;height:64px;width:64px;text-indent:-9999em;}
 footer .facebook{background-image:url(../images/facebook.png);}
 footer .twitter{background-image:url(../images/twitter.png);}
+footer .instagram{background-image:url(../images/instagram.png);}
 footer .youtube{background-image:url(../images/youtube.png);}
 footer .rss{background-image:url(../images/rss.png);}
 footer p{clear:left;padding:10px 0 0 0;text-align:center;}
@@ -397,16 +400,46 @@ a.button:hover{background-color:#9a4809;color:#efefef;}
 }
 
 @media only screen and (min-width: 640px){
-
-
-
   #wrapper{margin:20px 10% 0 10%;padding:20px 0 0 0;}
   .logo{position:absolute;top:0;left:0;margin:0;}
 
-  header form{position:absolute;top:0;right:0;width:300px;z-index:5;margin:0;}
-  header form input[type=search]{width:275px;}
-  header h1{font-size:4.8em;position:absolute;top:45px;right:0;z-index:1;}
-  header h2{font-size:1.6em;position:absolute;top:90px;right:0;z-index:1;}
+  header form{position:absolute;top:0;right:0;width:250px;z-index:5;margin:0;}
+  header form input[type=search]{width:225px;}
+
+  header .locations{
+    position:absolute;
+    top:45px;
+    right:0;
+    z-index:1;
+  }
+
+  header .locations .winthrop{
+    border-left: 2px solid #9a4809;
+    float: right;
+    padding-left: 15px;
+    text-align: left;
+    width: 110px;
+  }
+
+  header .locations .eb{
+    float: left;
+    padding-right: 15px;
+    text-align: right;
+    width: 135px;
+  }
+
+  header .locations h1, header .locations h2{
+    float: none;
+    text-align: inherit;
+    font-size: 2.2em;
+  }
+
+  header .locations h2{
+    font-size: 1.3em;
+  }
+
+  header h1{font-size:4.8em;}
+  header h2{font-size:1.6em;}
 
   .content-left header h1{position:absolute;top:70%;left:0;right:inherit;width:96%;padding:1% 2%;background-color: rgba(195, 186, 131); background-color: rgba(195, 186, 131, 0.6);margin:0;line-height:1;color:#fff;}
   .content-left header h1 a{color:#fff;}
@@ -461,16 +494,21 @@ background: linear-gradient(top,  #e5e5e5 0%,#dadada 100%);filter: progid:DXImag
 }
 
 @media only screen and (min-width: 768px){
+  header .locations .eb{
+    width: 165px;
+  }
+  header .locations .winthrop{
+    width: 140px;
+  }
+  header .locations h1{font-size:3em;}
+  header .locations h2{font-size:1.8em;}
 
-  header h1{font-size:4.8em;}
-  header h2{font-size:1.8em;}
   header nav ul li a{font-size:1.8em;}
   #search-form{width:60%;}
 }
 
 @media only screen and (min-width: 900px){
   .map input[type=text]{font-size:1.8em;}
-  header h1{font-size:6.8em;top:28px;}
   .image-left{float:left;width:300px;padding-right:10px;}
   header nav ul li a{font-size:2em;padding:10px 20px;text-align:left;}
   article.sermon{}
@@ -479,7 +517,14 @@ background: linear-gradient(top,  #e5e5e5 0%,#dadada 100%);filter: progid:DXImag
 }
 
 @media only screen and (min-width: 1025px){
-  header h1{font-size:7em;}
+  header .locations .eb{
+    width: 190px;
+  }
+  header .locations .winthrop{
+    width: 150px;
+  }
+  header .locations h1{font-size:3.5em;}
+
   .content-left{font-size:1.6em;}
   nav span{display:block;}
   header nav ul li a{font-size:2.4em;height:35px;}
