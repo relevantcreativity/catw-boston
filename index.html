@@ -15,32 +15,24 @@
 </head>
 <body>
 	<div id="wrapper">
-        <header>
-        	<a href="#" class="logo"><img src="images/logo.png" /></a>
-            <form method="post" action="/search" id="search">
-                <input type="search" id="searchTerm" name="searchTerm" value="" title="search" />
-                <input type="submit" name="submit" value="" id="search-submit" />
-            </form>
-            <h1>east boston</h1>
-            <h2>worship gatherings sundays @ 10am</h2>
-            <nav>
-            	<ul>
-                	<li class="first"><a href="#">I'm New<span>what to expect</span></a></li>
-                    <li><a href="#">About<span>learn about us</span></a>
-                    	<ul>
-                        	<li><a href="#">Our Story</a></li>
-                            <li><a href="#">Our Story</a></li>
-                            <li><a href="#">Our Story</a></li>
-                            <li><a href="#">Our Story</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">Connect<span>plug in locally</span></a></li>
-                    <li><a href="#">Resources<span>to help you grow</span></a></li>
-                    <li><a href="#">Blog<span>updates &amp; more</span></a></li>
-                    <li class="last"><a href="#">Giving<span>help us to give more</span></a></li>
-                </ul>
-            </nav>
-        </header>
+    <header role="banner" class="clearfix">
+        <nav><div class="bar"><a href="#" id="mobile-nav"><span></span><span></span><span></span></a></div><ul id="main-nav"><li class="first"><a href="#" class="first" >I'm New<span>what to expect</span></a><ul><li class="first"><a href="/east-boston/im-new/east-boston" class="first">Times &amp; Location</a></li><li><a href="/east-boston/im-new/what-to-expect">What To Expect</a></li><li class="last"><a href="/east-boston/im-new/your-story" class="last">Your Story</a></li></ul></li><li><a href="#" >About<span>learn about us</span></a><ul><li class="first"><a href="/east-boston/about/mission" class="first">Mission</a></li><li><a href="/east-boston/about/vision">Vision</a></li><li><a href="/east-boston/about/convictions">Convictions</a></li><li><a href="/east-boston/about/values">Values</a></li><li><a href="/east-boston/about/beliefs">Beliefs</a></li><li><a href="/east-boston/about/story">Our Story</a></li><li class="last"><a href="/east-boston/about/leadership" class="last">Leadership</a></li></ul></li><li><a href="#" >Connect<span>plug in locally</span></a><ul><li class="first"><a href="/east-boston/connect/worship-gatherings" class="first">Worship Gatherings</a></li><li><a href="/east-boston/connect/service-projects">Service Projects</a></li><li><a href="/east-boston/connect/community-groups">Community Groups</a></li><li class="last"><a href="/east-boston/calendar" class="last">Calendar of Events</a></li></ul></li><li><a href="#" >Resources<span>to help you grow</span></a><ul><li class="first"><a href="/east-boston/sermons" class="first">Sermons</a></li><li><a href="/east-boston/resources/links">Links</a></li><li class="last"><a href="/east-boston/resources/recommended-reading" class="last">Recommended Reading</a></li></ul></li><li><a href="/east-boston/blog" >Blog<span>updates &amp; more</span></a></li><li class="last"><a href="/east-boston/giving" class="last" >Giving<span>help us give more</span></a></li></ul></nav>
+      <a href="/" class="logo"><img src="images/logo.png" /></a>
+        <form method="post" action="/search" id="search">
+            <input type="search" id="searchTerm" name="searchTerm" value="" title="search" placeholder="Search" />
+            <input type="submit" name="submit" value="" id="search-submit" />
+        </form>
+        <div class="locations">
+          <div class="eb">
+            <h1><a href="/">east boston</a></h1>
+            <h2>sundays @ 10am</h2>
+          </div>
+          <div class="winthrop">
+            <h1><a href="/">winthrop</a></h1>
+            <h2>sundays @ 4pm</h2>
+          </div>
+        </div>
+    </header>
         <div id="hero">
             <div class="item">
                 <a href="#"><img src="images/hero/boston.jpg" alt="East Boston" /></a>
@@ -54,27 +46,16 @@
             <li><a href="#"><img src="images/hero/in-christ-sm.jpg" alt="Current Series" /></a></li>
         </ul>
         <div role="main" id="main" class="clearfix">
-        	
-            
-            <div class="sixthree">
-            	<ul class="banner">
-                    <li><a href="#"><img src="images/banners/truth.jpg" alt="Truth - Current Series" /></a></li>
-                    <li><a href="#"><img src="images/banners/love.jpg" alt="Love - Your Story" /></a></li>
-                    <li><a href="#"><img src="images/banners/community.jpg" alt="Community - Live and Connect" /></a></li>
-                </ul>
+          <div class="content-left-home">
+            <ul class="banner"> <li><a href="/east-boston/sermons/category/luke-a-portrait-of-the-king"><img src="images/banners/truth.jpg" alt="Truth - Current Series" /></a></li> <li><a href="/east-boston/im-new/your-story"><img src="images/banners/love.jpg" alt="Love - Your Story" /></a></li> <li><a href="/east-boston/connect/community-groups"><img src="images/banners/community.jpg" alt="Community - Live and Connect" /></a></li> </ul>
+          </div>
+          <div class="content-right-home">
+            <div class="map">
+                  <a href="http://g.co/maps/cd7v3" target="_blank"><img src="images/map.jpg" alt="CATW on Google Maps" /></a>
+                  <a href="http://g.co/maps/cd7v3" target="_blank"><img src="images/map.jpg" alt="CATW on Google Maps" /></a>
+              </div>
             </div>
-            <div class="threethree">
-            	<div class="map">
-                	<a href="http://g.co/maps/cd7v3" target="_blank"><img src="images/map.jpg" alt="CATW on Google Maps" /></a>
-                    <h1>Get Directions</h1>
-                    <form action="http://maps.google.com/maps" method="get" target="_blank" class="clearfix">
-                       <input type="text" name="saddr" />
-                       <input type="hidden" name="daddr" value="260 Sumner St, Boston, MA 02128" />
-                       <input type="submit" value="Via Google" />
-                    </form>
-                </div>
-            </div>
-        </div>
+          </div>
 	</div>
     <footer>
     	<div>
@@ -87,8 +68,8 @@
             <p>&copy; 2012 Deny Daily | <a href="mailto:info@catwboston.com">info@catwboston.com</a><br />
 			Design & Developed by <a href="http://www.jeremyjhamel.com" target="_blank">Relevant Creativity</a></p>
         	<a href="#" class="logo"><img src="images/logo.png" /></a>
-            
-            
+
+
         </div>
     </footer>
 
@@ -97,7 +78,7 @@
   <script src="layout/js/jquery.cycle.min.js"></script>
   <script src="layout/js/jquery.example.min.js"></script>
   <script src="layout/js/script.js"></script>
-  
+
   <script>
     var _gaq=[['_setAccount','UA-29862577-1'],['_trackPageview']];
     (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
