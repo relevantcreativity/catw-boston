@@ -388,8 +388,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#671506', end
 
 .blog article{padding:2em 0;border-bottom:1px solid #ccc;}
 
-a.button{color:#9a4809;padding:10px 20px;border:1px solid #9a4809;-webkit-border-radius: 5px;border-radius: 5px;margin-right:10px;}
-a.button:hover{background-color:#9a4809;color:#efefef;}
+form.default input[type=submit], a.button{background:none;color:#9a4809;padding:10px 20px;border:1px solid #9a4809;-webkit-border-radius: 5px;border-radius: 5px;margin-right:10px;}
+form.default input[type=submit]:hover, a.button:hover{background-color:#9a4809;color:#efefef;}
+
+form.default input[type=text], form.default textarea{background:#fff;border:1px solid #ccc;box-sizing:border-box;padding:0 5px;line-height:25px;width:100%;}
+
 
 @media only screen and (min-width: 480px){
   body.home .locations .location{
